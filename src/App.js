@@ -1,14 +1,16 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 
 class App extends Component {
     render() {
         return (
-            <div data-test="app-component">
+            <div
+                data-test="app-component"
+                style={{ textAlign: "center", marginTop: "50px" }}
+            >
                 <h1 data-test="counter-display">The counter is currently</h1>
                 <button
-                    className="btn btn-primary"
+                    className="btn btn-primary mt-2"
                     data-test="increment-button"
                 >
                     Increment
