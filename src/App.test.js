@@ -13,13 +13,15 @@ test("renders without an error", () => {
 
 test("renders the increment button", () => {
     const wrapper = shallow(<App />);
-    const button = wrapper.find("[data-test='increment-button-component']");
+    const button = wrapper.find("[data-test='increment-button']");
     expect(button.length).toBe(1);
 });
 
-test("renders the increment button", () => {});
-
-test("renders the counter display", () => {});
+test("renders the counter display", () => {
+    const wrapper = shallow(<App />);
+    const counterDisplay = wrapper.find("[data-test='counter-display']");
+    expect(counterDisplay.length).toBe(1);
+});
 
 test("coutner starts at 0", () => {});
 
