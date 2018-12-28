@@ -65,5 +65,6 @@ test("when button clicked, the counter is incremented in display", () => {
     // Find display and test value
     const counterDisplay = findByTestAttr(wrapper, "counter-display");
     expect(counterDisplay.text()).toContain(counter + 1);
+    // The counter is currently at: 8
     console.log(counterDisplay.text());
 });
